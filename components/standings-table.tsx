@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from "react"
 import type { Team } from "@/lib/types"
-import { initialTeams } from "@/lib/initial-data"
+import { supabase } from "@/lib/supabase"
 import { useAdmin } from "@/lib/admin-context"
 import { useLocalStorage } from "@/hooks/use-local-storage"
 import { EditableCell } from "./editable-cell"

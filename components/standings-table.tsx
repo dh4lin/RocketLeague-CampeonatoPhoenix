@@ -131,7 +131,7 @@ export function StandingsTable() {
   const columns = [
     { key: "pos", label: "Pos", tooltip: "Posicao" },
     { key: "photo", label: "", tooltip: "Foto" },
-    { key: "name", label: "PARTICIPANTE", tooltip: "Nome do participante" },
+    { key: "name", label: "PART", tooltip: "Nome do participante" },
     { key: "rodadas", label: "R", tooltip: "Rodadas" },
     { key: "vitorias", label: "V", tooltip: "Vitorias" },
     { key: "empates", label: "E", tooltip: "Empates" },
@@ -544,7 +544,7 @@ export function StandingsTable() {
           <strong className="text-foreground">Pos</strong> Posicao
         </span>
         <span>
-          <strong className="text-foreground">P</strong> Participante
+          <strong className="text-foreground">PART.</strong> Participantes
         </span>
         <span>
           <strong className="text-foreground">R</strong> Rodadas

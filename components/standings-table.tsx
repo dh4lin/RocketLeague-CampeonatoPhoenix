@@ -31,8 +31,8 @@ interface StoredData {
 
 const defaultData: StoredData = {
   teams: initialTeams,
-  title: "Campeonato Brasileiro",
-  season: "Serie A 2026",
+  title: "Campeonato Phoenix de Rocket League",
+  season: "EDIÇÃO TWITCH",
   sortEnabled: true,
 }
 

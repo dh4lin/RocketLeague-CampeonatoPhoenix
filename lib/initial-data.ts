@@ -37,7 +37,7 @@ export const initialTeams: Team[] = [
   {
     id: "4",
     name: "B.4.B.1.",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/62986fc6-9996-405f-a0fa-6baf2004b848-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,

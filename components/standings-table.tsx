@@ -130,7 +130,7 @@ export function StandingsTable() {
 
   const columns = [
     { key: "pos", label: "Pos", tooltip: "Posicao" },
-    { key: "photo", label: "", tooltip: "" },
+    { key: "photo", label: "F", tooltip: "Foto" },
     { key: "name", label: "Time", tooltip: "Nome do time" },
     { key: "rodadas", label: "R", tooltip: "Rodadas" },
     { key: "vitorias", label: "V", tooltip: "Vitorias" },
@@ -200,7 +200,7 @@ export function StandingsTable() {
                 className="gap-1.5 bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 <Plus className="h-4 w-4" />
-                Adicionar Time
+                Adicionar Participante
               </Button>
               <Button
                 onClick={resetAll}
@@ -228,7 +228,7 @@ export function StandingsTable() {
           ) : (
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Lock className="h-4 w-4" />
-              <span>Modo visualizacao</span>
+              <span>Modo visualização</span>
             </div>
           )}
         </div>
@@ -301,7 +301,7 @@ export function StandingsTable() {
                 <tr
                   key={team.id}
                   className={`group border-b border-border/50 transition-colors hover:bg-secondary/30 ${
-                    position <= 4 ? "border-l-2 border-l-primary" : ""
+                    position <= 3 ? "border-l-2 border-l-primary" : ""
                   } ${position === 1 ? "bg-primary/5" : ""}`}
                 >
                   {/* Position */}
@@ -310,7 +310,7 @@ export function StandingsTable() {
                       className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
                         position === 1
                           ? "bg-primary text-primary-foreground"
-                          : position <= 4
+                          : position <= 3
                           ? "bg-primary/20 text-primary"
                           : "text-muted-foreground"
                       }`}
@@ -517,7 +517,7 @@ export function StandingsTable() {
         {sortedTeams.length === 0 && (
           <div className="flex flex-col items-center justify-center py-16 text-muted-foreground">
             <Trophy className="mb-3 h-10 w-10 opacity-30" />
-            <p className="text-sm">Nenhum time adicionado</p>
+            <p className="text-sm">Nenhum participante adicionado</p>
             {isAdmin && (
               <Button
                 onClick={addTeam}
@@ -537,14 +537,14 @@ export function StandingsTable() {
       <div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
         <div className="flex items-center gap-1.5">
           <span className="inline-block h-3 w-3 rounded-full bg-primary/30" />
-          <span>{"Classificacao (Top 4)"}</span>
+          <span>{"Classificação (Top 3)"}</span>
         </div>
         <span className="text-border">{"| "}</span>
         <span>
           <strong className="text-foreground">Pos</strong> Posicao
         </span>
         <span>
-          <strong className="text-foreground">F</strong> Foto
+          <strong className="text-foreground">P</strong> Participante
         </span>
         <span>
           <strong className="text-foreground">R</strong> Rodadas

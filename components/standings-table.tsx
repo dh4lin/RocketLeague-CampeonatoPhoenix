@@ -97,7 +97,7 @@ export function StandingsTable() {
   const addTeam = useCallback(() => {
     const newTeam: Team = {
       id: Date.now().toString(),
-      name: "Novo Time",
+      name: "Novo Participante",
       photo: null,
       rodadas: 0,
       vitorias: 0,
@@ -130,7 +130,7 @@ export function StandingsTable() {
 
   const columns = [
     { key: "pos", label: "Pos", tooltip: "Posicao" },
-    { key: "photo", label: "F", tooltip: "Foto" },
+    { key: "photo", label: "", tooltip: "" },
     { key: "name", label: "Time", tooltip: "Nome do time" },
     { key: "rodadas", label: "R", tooltip: "Rodadas" },
     { key: "vitorias", label: "V", tooltip: "Vitorias" },

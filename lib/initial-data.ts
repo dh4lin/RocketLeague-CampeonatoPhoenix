@@ -68,7 +68,7 @@ export const initialTeams: Team[] = [
     golsSofridos: 10,
   },
   {
-    id: "6",
+    id: "7",
     name: "participante 7",
     photo: null,
     rodadas: 10,
@@ -79,7 +79,7 @@ export const initialTeams: Team[] = [
     golsSofridos: 10,
   },
   {
-    id: "6",
+    id: "8",
     name: "participante 8",
     photo: null,
     rodadas: 10,
@@ -90,7 +90,7 @@ export const initialTeams: Team[] = [
     golsSofridos: 10,
   },
   {
-    id: "6",
+    id: "9",
     name: "participante 9",
     photo: null,
     rodadas: 10,
@@ -101,7 +101,7 @@ export const initialTeams: Team[] = [
     golsSofridos: 10,
   },
   {
-    id: "6",
+    id: "10",
     name: "participante 10",
     photo: null,
     rodadas: 10,
@@ -112,7 +112,7 @@ export const initialTeams: Team[] = [
     golsSofridos: 10,
   },
   {
-    id: "6",
+    id: "11",
     name: "participante 11",
     photo: null,
     rodadas: 10,

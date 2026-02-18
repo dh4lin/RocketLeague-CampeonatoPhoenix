@@ -130,8 +130,8 @@ export function StandingsTable() {
 
   const columns = [
     { key: "pos", label: "Pos", tooltip: "Posicao" },
-    { key: "photo", label: "F", tooltip: "Foto" },
-    { key: "name", label: "Time", tooltip: "Nome do time" },
+    { key: "photo", label: "", tooltip: "Foto" },
+    { key: "name", label: "PARTICIPANTE", tooltip: "Nome do participante" },
     { key: "rodadas", label: "R", tooltip: "Rodadas" },
     { key: "vitorias", label: "V", tooltip: "Vitorias" },
     { key: "empates", label: "E", tooltip: "Empates" },
@@ -501,7 +501,7 @@ export function StandingsTable() {
                       <button
                         onClick={() => removeTeam(team.id)}
                         className="rounded-md p-1 text-muted-foreground opacity-0 transition-all hover:bg-destructive/10 hover:text-destructive group-hover:opacity-100 focus:opacity-100 focus:outline-none"
-                        title="Remover time"
+                        title="Remover participante"
                         aria-label={`Remover ${team.name}`}
                       >
                         <Trash2 className="h-3.5 w-3.5" />
@@ -526,7 +526,7 @@ export function StandingsTable() {
                 className="mt-3 gap-1.5 border-border text-foreground hover:bg-secondary"
               >
                 <Plus className="h-4 w-4" />
-                Adicionar Time
+                Adicionar Participante
               </Button>
             )}
           </div>

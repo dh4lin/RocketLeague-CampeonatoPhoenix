@@ -54,7 +54,7 @@ export function PasswordDialog({ open, onOpenChange }: PasswordDialogProps) {
           </div>
           <DialogTitle className="text-center">Modo Administrador</DialogTitle>
           <DialogDescription className="text-center">
-            Digite a senha para habilitar a edicao da tabela.
+            Digite a senha para habilitar a edição da tabela.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">

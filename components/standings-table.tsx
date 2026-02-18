@@ -2,7 +2,16 @@
 
 import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabase"
-import { Team } from "@/lib/types"
+
+type Team = {
+  id: string
+  name: string
+  vitorias: number
+  empates: number
+  derrotas: number
+  golsMarcados: number
+  golsSofridos: number
+}
 
 export function StandingsTable() {
   const [teams, setTeams] = useState<Team[]>([])
@@ -14,16 +23,28 @@ export function StandingsTable() {
   }, [])
 
   async function fetchTeams() {
-    const { data, error } = await supabase
+    const { data } = await supabase
       .from("teams")
       .select("*")
-      .order("pontos", { ascending: false })
 
-    if (!error && data) {
-      setTeams(data)
-    }
-
+    if (data) setTeams(data)
     setLoading(false)
+  }
+
+  function calcPts(t: Team) {
+    return t.vitorias * 3 + t.empates
+  }
+
+  function updateValue(
+    id: string,
+    field: keyof Team,
+    value: number
+  ) {
+    setTeams((prev) =>
+      prev.map((t) =>
+        t.id === id ? { ...t, [field]: value } : t
+      )
+    )
   }
 
   async function handleSave() {
@@ -33,8 +54,8 @@ export function StandingsTable() {
       .from("teams")
       .upsert(teams)
 
+    alert("Salvo com sucesso!")
     setSaving(false)
-    alert("Salvo no banco com sucesso!")
   }
 
   if (loading) return <div>Carregando...</div>
@@ -62,12 +83,83 @@ export function StandingsTable() {
           {teams.map((t) => (
             <tr key={t.id} className="text-center border-t">
               <td>{t.name}</td>
-              <td>{t.pontos}</td>
-              <td>{t.vitorias}</td>
-              <td>{t.empates}</td>
-              <td>{t.derrotas}</td>
-              <td>{t.golsMarcados}</td>
-              <td>{t.golsSofridos}</td>
+
+              <td>{calcPts(t)}</td>
+
+              <td>
+                <input
+                  type="number"
+                  value={t.vitorias}
+                  onChange={(e) =>
+                    updateValue(
+                      t.id,
+                      "vitorias",
+                      Number(e.target.value)
+                    )
+                  }
+                  className="w-16 border"
+                />
+              </td>
+
+              <td>
+                <input
+                  type="number"
+                  value={t.empates}
+                  onChange={(e) =>
+                    updateValue(
+                      t.id,
+                      "empates",
+                      Number(e.target.value)
+                    )
+                  }
+                  className="w-16 border"
+                />
+              </td>
+
+              <td>
+                <input
+                  type="number"
+                  value={t.derrotas}
+                  onChange={(e) =>
+                    updateValue(
+                      t.id,
+                      "derrotas",
+                      Number(e.target.value)
+                    )
+                  }
+                  className="w-16 border"
+                />
+              </td>
+
+              <td>
+                <input
+                  type="number"
+                  value={t.golsMarcados}
+                  onChange={(e) =>
+                    updateValue(
+                      t.id,
+                      "golsMarcados",
+                      Number(e.target.value)
+                    )
+                  }
+                  className="w-16 border"
+                />
+              </td>
+
+              <td>
+                <input
+                  type="number"
+                  value={t.golsSofridos}
+                  onChange={(e) =>
+                    updateValue(
+                      t.id,
+                      "golsSofridos",
+                      Number(e.target.value)
+                    )
+                  }
+                  className="w-16 border"
+                />
+              </td>
             </tr>
           ))}
         </tbody>
@@ -78,7 +170,7 @@ export function StandingsTable() {
         disabled={saving}
         className="mt-4 px-4 py-2 bg-blue-600 text-white rounded"
       >
-        {saving ? "Salvando..." : "Salvar alterações"}
+        {saving ? "Salvando..." : "Salvar"}
       </button>
     </div>
   )

@@ -145,7 +145,7 @@ export function StandingsTable() {
   // Show a subtle loading state while hydrating from localStorage
   if (!isHydrated) {
     return (
-      <div className="mx-auto w-full max-w-7xl px-4 py-8">
+      <div className="mx-auto w-full max-w-6xl px-4 py-8">
         <div className="flex items-center justify-center py-20">
           <div className="h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
         </div>
@@ -154,7 +154,7 @@ export function StandingsTable() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-7xl px-4 py-8">
+    <div className="mx-auto w-full max-w-6xl px-4 py-8">
       {/* Header */}
       <div className="mb-8 text-center">
         <div className="mb-2 flex items-center justify-center gap-3">

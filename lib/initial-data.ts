@@ -4,7 +4,7 @@ export const initialTeams: Team[] = [
   {
     id: "1",
     name: "barbudonipon",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/491150a5-907c-48c6-ad69-f3a2ece3b7fa-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -15,7 +15,7 @@ export const initialTeams: Team[] = [
   {
     id: "2",
     name: "blayde99",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/14b223fb-b093-4266-9d17-d39d5770898d-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -26,7 +26,7 @@ export const initialTeams: Team[] = [
   {
     id: "3",
     name: "bow",
-    photo: null,
+    photo: "https://i.ibb.co/4nHBS3N2/image1.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -48,7 +48,7 @@ export const initialTeams: Team[] = [
   {
     id: "5",
     name: "EsseAza",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/d4b76b19-4e17-4492-a590-8bf862a1ac89-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -59,7 +59,7 @@ export const initialTeams: Team[] = [
   {
     id: "6",
     name: "ExtranoGabu",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/a01e3443-0cf4-4216-bef8-b14b3f1ce0b6-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -70,7 +70,7 @@ export const initialTeams: Team[] = [
   {
     id: "7",
     name: "J.rain",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/69e50028-1322-4921-8a80-83d0b19e1003-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -81,7 +81,7 @@ export const initialTeams: Team[] = [
   {
     id: "8",
     name: "Kaede_Monthmore",
-    photo: null,
+    photo: "https://i.ibb.co/x8YPq0Nr/image.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -92,7 +92,7 @@ export const initialTeams: Team[] = [
   {
     id: "9",
     name: "PhOeNiX_H",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/013cc8e2-ed7c-47ad-bfcf-269cb5a9fb80-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -103,7 +103,7 @@ export const initialTeams: Team[] = [
   {
     id: "10",
     name: "SWisleyTTV",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/0a74c606-798f-46eb-9cd0-c72eaf82e927-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,
@@ -114,7 +114,7 @@ export const initialTeams: Team[] = [
   {
     id: "11",
     name: "victor_fujita",
-    photo: null,
+    photo: "https://static-cdn.jtvnw.net/jtv_user_pictures/8f2893c0-5283-47a7-bfff-9aea3b3fb942-profile_image-70x70.png",
     rodadas: 0,
     vitorias: 0,
     empates: 0,

@@ -544,7 +544,7 @@ export function StandingsTable() {
           <strong className="text-foreground">Pos</strong> Posicao
         </span>
         <span>
-          <strong className="text-foreground">PART.</strong> Participantes
+          <strong className="text-foreground">PART</strong> Participantes
         </span>
         <span>
           <strong className="text-foreground">R</strong> Rodadas
@@ -568,7 +568,7 @@ export function StandingsTable() {
           <strong className="text-foreground">SG</strong> Saldo de Gols
         </span>
         <span>
-          <strong className="text-foreground">Pts</strong> Pontos
+          <strong className="text-foreground">PTS</strong> Pontos
         </span>
       </div>
 

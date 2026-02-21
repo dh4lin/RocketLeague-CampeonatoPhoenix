@@ -41,7 +41,7 @@ function calcSaldoGols(team: Team) {
 }
 
 function calcPontos(team: Team) {
-  return team.vitorias * 3 + team.empates
+  return team.vitorias * 6 + team.empates
 }
 
 function sortTeams(teams: Team[]): Team[] {

@@ -41,7 +41,7 @@ function calcSaldoGols(team: Team) {
 }
 
 function calcPontos(team: Team) {
-  return team.vitorias * 6 + team.empates
+  return team.vitorias * 3 + team.empates
 }
 
 function sortTeams(teams: Team[]): Team[] {
@@ -310,7 +310,7 @@ export function StandingsTable() {
                       className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
                         position === 1
                           ? "bg-primary text-primary-foreground"
-                          : position <= 3
+                          : position <= 6
                           ? "bg-primary/20 text-primary"
                           : "text-muted-foreground"
                       }`}

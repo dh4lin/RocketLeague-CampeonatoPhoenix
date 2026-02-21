@@ -541,7 +541,7 @@ export function StandingsTable() {
         </div>
         <span className="text-border">{"| "}</span>
         <span>
-          <strong className="text-foreground">Pos</strong> Posicao
+          <strong className="text-foreground">POS</strong> Posicao
         </span>
         <span>
           <strong className="text-foreground">PART</strong> Participantes

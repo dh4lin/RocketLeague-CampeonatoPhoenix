@@ -537,7 +537,7 @@ export function StandingsTable() {
       <div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
         <div className="flex items-center gap-1.5">
           <span className="inline-block h-3 w-3 rounded-full bg-primary/30" />
-          <span>{"Classificação (Top 3)"}</span>
+          <span>{"Classificação (Top 6)"}</span>
         </div>
         <span className="text-border">{"| "}</span>
         <span>

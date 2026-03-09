@@ -120,6 +120,6 @@ export const initialTeams: Team[] = [
     empates: 1,
     derrotas: 1,
     golsMarcados: 15,
-    golsSofridos: 22,
+    golsSofridos: 21,
   },
 ]
